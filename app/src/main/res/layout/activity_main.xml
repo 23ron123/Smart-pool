@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/caption"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        android:text="SmartPool"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/custom_button4"
+        android:textSize="55sp" />
+
+
+    <Button
+        android:id="@+id/ShowAllProducts"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:background="@drawable/custom_button3"
+        android:text="Show ALL"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/conect"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:background="@drawable/custom_button"
+        android:text="Connect"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp" />
+
+   <!-- //ניתן למחוק אחר כך נמצא רק בשביל בדיקה.
+    <TextView
+        android:id="@+id/textCheck"
+        android:layout_width="320dp"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_below="@+id/text"
+        android:text="enter a string with ~ between numbers for example: 36.51~25.2~0.3"
+        android:background="@drawable/custom_button4"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp" />
+    <EditText
+        android:id="@+id/editTextString"
+        android:hint="insert string"
+        android:layout_width="250dp"
+        android:layout_gravity="center"
+        android:textColorHint="#CCCCCC"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/checkButton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:background="@drawable/custom_button"
+        android:text="Check"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp" />
+-->
+
+
+
+
+</LinearLayout>

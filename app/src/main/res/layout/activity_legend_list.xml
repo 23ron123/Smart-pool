@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/back"
+    tools:context=".LegendListActivity">
+
+    <TextView
+        android:layout_marginTop="30dp"
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="when Temperature, Water level or Ph higher maximum it will show a red image:"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        >
+
+
+        <LinearLayout
+            android:id="@+id/linar1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+
+            <TextView
+                android:layout_marginTop="4dp"
+                android:id="@+id/tvTemperature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:text="Temperature: "
+                android:textSize="20dp"
+                />
+            <TextView
+                android:layout_marginTop="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvTemperatureNum"
+                android:text="38  (maximum 25)"
+                android:textColor="#FFFFFF"
+                android:textSize="20dp"
+                />
+
+            <ImageView
+                android:id="@+id/ivtvTemperature"
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:layout_marginTop="4dp"
+                android:src="@drawable/kred"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/linar2"
+            android:layout_below="@id/linar1"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvSalinity"
+                android:text="Water level: "
+                android:textColor="#FFFFFF"
+                android:textSize="20dp"
+                />
+
+            <TextView
+                android:id="@+id/tvSalinityNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="40 (maximum 36)"
+                android:textColor="#FFFFFF"
+                android:textSize="20dp" />
+
+            <ImageView
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:id="@+id/ivtvSalinity"
+                android:src="@drawable/kred"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/linar2"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvPh"
+                android:text="Ph: "
+                android:textColor="#FFFFFF"
+                android:textSize="20dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvPhNum"
+                android:textColor="#FFFFFF"
+                android:text="10 (maximum 8)"
+                android:textSize="20dp"
+                />
+
+            <ImageView
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:id="@+id/ivPh"
+                android:src="@drawable/kred"
+                />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:text="when Temperature, Water level or Ph lower minimum it will show a blue image:"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        >
+
+
+        <LinearLayout
+            android:id="@+id/linar21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+
+            <TextView
+                android:layout_marginTop="4dp"
+                android:id="@+id/tvTemperature2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:text="Temperature: "
+                android:textSize="20dp"
+                />
+            <TextView
+                android:layout_marginTop="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvTemperatureNum2"
+                android:text="16  (minimum 18)"
+                android:textColor="#FFFFFF"
+                android:textSize="20dp"
+                />
+
+            <ImageView
+                android:id="@+id/ivtvTemperature2"
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:layout_marginTop="4dp"
+                android:src="@drawable/nblue2"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/linar22"
+            android:layout_below="@id/linar21"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvSalinity2"
+                android:text="Water level: "
+                android:textColor="#FFFFFF"
+                android:textSize="20dp"
+                />
+
+            <TextView
+                android:id="@+id/tvSalinityNum2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20 (minimum 34)"
+                android:textColor="#FFFFFF"
+                android:textSize="20dp" />
+
+            <ImageView
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:id="@+id/ivtvSalinity2"
+                android:src="@drawable/nblue2"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/linar22"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvPh2"
+                android:text="Ph: "
+                android:textColor="#FFFFFF"
+                android:textSize="20dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvPhNum2"
+                android:textColor="#FFFFFF"
+                android:text="2 (minimum 4)"
+                android:textSize="20dp"
+                />
+
+            <ImageView
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:id="@+id/ivPh2"
+                android:src="@drawable/nblue2"
+                />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/text3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="when Temperature, Water level or Ph fit it will show a green image:"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        >
+
+
+        <LinearLayout
+            android:id="@+id/linar31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+
+            <TextView
+                android:layout_marginTop="4dp"
+                android:id="@+id/tvTemperature3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:text="Temperature: "
+                android:textSize="20dp"
+                />
+            <TextView
+                android:layout_marginTop="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvTemperatureNum3"
+                android:text="22"
+                android:textColor="#FFFFFF"
+                android:textSize="20dp"
+                />
+
+            <ImageView
+                android:id="@+id/ivtvTemperature3"
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:layout_marginTop="4dp"
+                android:src="@drawable/kgreen"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/linar32"
+            android:layout_below="@id/linar31"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvSalinity3"
+                android:text="Water level: "
+                android:textColor="#FFFFFF"
+                android:textSize="20dp"
+                />
+
+            <TextView
+                android:id="@+id/tvSalinityNum3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="35"
+                android:textColor="#FFFFFF"
+                android:textSize="20dp" />
+
+            <ImageView
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:id="@+id/ivtvSalinity3"
+                android:src="@drawable/kgreen"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/linar32"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvPh3"
+                android:text="Ph: "
+                android:textColor="#FFFFFF"
+                android:textSize="20dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvPhNum3"
+                android:textColor="#FFFFFF"
+                android:text="6"
+                android:textSize="20dp"
+                />
+
+            <ImageView
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:id="@+id/ivPh3"
+                android:src="@drawable/kgreen"
+                />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp">
+
+    <ImageView
+        android:layout_marginTop="4dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/iv"
+        />
+    <LinearLayout
+        android:id="@+id/linar1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_toEndOf="@id/iv"
+        >
+
+
+        <TextView
+            android:layout_marginTop="4dp"
+            android:id="@+id/tvTemperature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="Temperature: "
+            android:textSize="15dp"
+            />
+        <TextView
+            android:layout_marginTop="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvTemperatureNum"
+            android:text="Num"
+            android:textColor="#FFFFFF"
+            android:textSize="15dp"
+            />
+
+        <ImageView
+            android:layout_marginTop="4dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/ivtvTemperature"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linarDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_toEndOf="@id/linar1"
+        >
+
+        <TextView
+            android:layout_marginTop="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ronen Hamelh"
+            android:textColor="#FFFFFF"
+            android:textSize="15dp"
+            android:id="@+id/date" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/linar2"
+        android:layout_below="@id/linar1"
+        android:layout_toEndOf="@id/iv"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvSalinity"
+            android:text="Water level: "
+            android:textColor="#FFFFFF"
+            android:textSize="15dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvSalinityNum"
+            android:text="Num"
+            android:textColor="#FFFFFF"
+            android:textSize="15dp"
+            />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/ivtvSalinity"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/linar2"
+        android:layout_toEndOf="@id/iv"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvPh"
+            android:text="Ph: "
+            android:textColor="#FFFFFF"
+            android:textSize="15dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvPhNum"
+            android:textColor="#FFFFFF"
+            android:text="Num"
+            android:textSize="15dp"
+            />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/ivPh"
+            />
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+</RelativeLayout>

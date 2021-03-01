@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/back"
+    tools:context=".InsertActivity">
+
+    <TextView
+        android:id="@+id/text_view_temperature"
+        android:layout_width="200dp"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:layout_below="@+id/text"
+        android:text="temperature"
+        android:background="@drawable/custom_button4"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp" />
+    <EditText
+        android:id="@+id/edit_text_temperature"
+        android:hint="insert temperature"
+        android:layout_width="250dp"
+        android:inputType="number"
+        android:layout_gravity="center"
+        android:textColorHint="#CCCCCC"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/text_view_salinity"
+        android:layout_width="200dp"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:text="salinity"
+        android:background="@drawable/custom_button4"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp" />
+    <EditText
+        android:id="@+id/edit_text_salinity"
+        android:hint="insert salinity"
+        android:inputType="number"
+        android:layout_width="250dp"
+        android:layout_gravity="center"
+        android:textColorHint="#CCCCCC"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:id="@+id/text_view_ph"
+        android:layout_width="200dp"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:text="Ph"
+        android:background="@drawable/custom_button4"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp" />
+    <EditText
+        android:id="@+id/edit_text_ph"
+        android:hint="insert Ph"
+        android:layout_width="250dp"
+        android:layout_gravity="center"
+        android:inputType="number"
+        android:textColorHint="#CCCCCC"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        android:layout_height="wrap_content" />
+
+
+
+    <Button
+        android:id="@+id/insertBtnSave"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:text="Save and INSERT"
+        android:textSize="20dp"
+        android:background="@drawable/custom_button"
+        android:textColor="#FFFFFF"/>
+</LinearLayout>

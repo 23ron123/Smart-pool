@@ -1,0 +1,2 @@
+rootProject.name='PoolNk'
+include ':app'
